@@ -1,0 +1,20 @@
+In this problem, you are given an array C of size N. The goal is to arrange the elements of the array in a circle in a clockwise manner. To achieve this, you can perform two types of operations:
+
+1. Operation 1: Select two adjacent elements X and Y and replace them with X || Y, which represents the bitwise OR operation.
+2. Operation 2: Select two adjacent elements X and Y and replace them with X && Y, which represents the bitwise AND operation.
+
+You can perform a total of (N-2) operations of either type. After performing these operations, you need to find the maximum possible difference between the two remaining elements in the array.
+
+To solve this problem, you can follow these steps:
+
+1. Read the number of test cases, T.
+2. For each test case:
+   a. Read the size of the array, N.
+   b. Read the elements of the array, C.
+   c. Perform the operations as described:
+      - Iterate (N-2) times.
+      - For each iteration, select two adjacent elements and perform either Operation 1 or Operation 2.
+   d. Calculate the difference between the two remaining elements.
+   e. Output the maximum difference for the current test case.
+
+The goal is to determine the maximum difference that can be achieved by strategically performing the given operations on the array elements. The operations modify the array in a way that maximizes the difference between the remaining elements
